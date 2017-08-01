@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="wyPayShareView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="314"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hb" translatesAutoresizingMaskIntoConstraints="NO" id="hwR-RZ-woG">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88s-lf-P4Z">
+                    <color key="backgroundColor" red="0.050980392156862744" green="0.27058823529411763" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="2PS-ZM-TqP"/>
+                    </constraints>
+                    <state key="normal" title="分享给好友">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4h-D8-zgr">
+                    <color key="backgroundColor" red="0.52549019607843139" green="0.52941176470588236" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="JWI-hJ-uDp"/>
+                    </constraints>
+                    <state key="normal" title="不了">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hwR-RZ-woG" secondAttribute="bottom" id="0R3-Dl-09S"/>
+                <constraint firstAttribute="trailing" secondItem="88s-lf-P4Z" secondAttribute="trailing" constant="70" id="5Bh-c8-r51"/>
+                <constraint firstItem="hwR-RZ-woG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9rT-w1-95q"/>
+                <constraint firstItem="Z4h-D8-zgr" firstAttribute="top" secondItem="88s-lf-P4Z" secondAttribute="bottom" constant="10" id="D6m-qG-VZD"/>
+                <constraint firstItem="88s-lf-P4Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="70" id="MjE-5t-XyV"/>
+                <constraint firstItem="Z4h-D8-zgr" firstAttribute="trailing" secondItem="88s-lf-P4Z" secondAttribute="trailing" id="Nim-gG-BXb"/>
+                <constraint firstItem="Z4h-D8-zgr" firstAttribute="leading" secondItem="88s-lf-P4Z" secondAttribute="leading" id="ifH-O0-WlL"/>
+                <constraint firstAttribute="bottom" secondItem="Z4h-D8-zgr" secondAttribute="bottom" constant="25" id="pV7-ZJ-JXC"/>
+                <constraint firstItem="hwR-RZ-woG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="slQ-Vr-Bi7"/>
+                <constraint firstAttribute="trailing" secondItem="hwR-RZ-woG" secondAttribute="trailing" id="uLv-d8-LaU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCancle" destination="Z4h-D8-zgr" id="ucA-fl-kYe"/>
+                <outlet property="btnShareToFriend" destination="88s-lf-P4Z" id="kXO-Gw-E1G"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="-122"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hb" width="285" height="336"/>
+    </resources>
+</document>

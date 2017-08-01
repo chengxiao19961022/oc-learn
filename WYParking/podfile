@@ -1,0 +1,39 @@
+platform:ios,'8.0'
+use_frameworks!
+
+target 'WYParking' do
+# 主模块(必须)
+pod 'ShareSDK3'
+# Mob 公共库(必须) 如果同时集成SMSSDK iOS2.0:可看此注意事项：http://bbs.mob.com/thread-20051-1-1.html
+pod 'MOBFoundation'
+pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+pod 'libextobjc'
+pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+pod 'UMengAnalytics'
+pod 'AMapSearch'
+pod 'AMapNavi'
+pod 'AMapLocation'
+pod 'MJExtension'
+pod 'UITextView+Placeholder'
+pod 'YYKit'
+pod 'FLEX'
+pod 'YUChineseSorting'
+pod 'SVProgressHUD'
+pod 'Toast'
+pod 'IQKeyboardManager'
+pod 'RDVTabBarController'
+pod 'KLCPopup'
+pod 'pop'
+pod 'AFNetworking'
+pod 'PKRevealController'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'MJRefresh'
+pod 'Masonry'
+pod 'BlocksKit'
+pod 'RongCloudIM'
+pod ‘XZMRefresh’
+
+
+end
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="wyReasonCell" rowHeight="41" id="KGk-i7-Jjw" customClass="wyReasonCell">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DP8-zf-Qc2">
+                        <rect key="frame" x="8" y="6" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="5gr-fQ-1gQ"/>
+                            <constraint firstAttribute="width" constant="24" id="LFb-A2-jad"/>
+                        </constraints>
+                        <state key="normal" image="51Reason_0"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11111111" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8D-9B-0H0">
+                        <rect key="frame" x="42" y="10" width="259" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="4pd-Fx-h9U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYj-DG-fDA">
+                        <rect key="frame" x="0.0" y="36.5" width="319" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fnV-si-xrw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S8D-9B-0H0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0LU-6c-1oW"/>
+                    <constraint firstItem="YYj-DG-fDA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ADj-2r-cqz"/>
+                    <constraint firstAttribute="trailing" secondItem="S8D-9B-0H0" secondAttribute="trailing" constant="18" id="EGX-e9-0Hx"/>
+                    <constraint firstItem="YYj-DG-fDA" firstAttribute="top" secondItem="S8D-9B-0H0" secondAttribute="bottom" constant="10.5" id="Fm7-rM-sbK"/>
+                    <constraint firstAttribute="bottom" secondItem="YYj-DG-fDA" secondAttribute="bottom" constant="3" id="LHF-Pp-j99"/>
+                    <constraint firstAttribute="bottom" secondItem="YYj-DG-fDA" secondAttribute="bottom" constant="15" id="MFI-te-OGZ"/>
+                    <constraint firstAttribute="trailing" secondItem="YYj-DG-fDA" secondAttribute="trailing" id="QYA-nh-b6g"/>
+                    <constraint firstItem="DP8-zf-Qc2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Up1-va-fMn"/>
+                    <constraint firstItem="DP8-zf-Qc2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="WYf-hV-Xt1"/>
+                    <constraint firstItem="S8D-9B-0H0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="WxD-me-ys4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="S8D-9B-0H0" secondAttribute="bottom" constant="10" id="nPn-7w-U7C"/>
+                    <constraint firstItem="S8D-9B-0H0" firstAttribute="leading" secondItem="DP8-zf-Qc2" secondAttribute="trailing" constant="10" id="r56-AM-4wr"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="WxD-me-ys4"/>
+                        <exclude reference="nPn-7w-U7C"/>
+                        <exclude reference="MFI-te-OGZ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnState" destination="DP8-zf-Qc2" id="Gjs-hi-A5W"/>
+                <outlet property="labReason" destination="S8D-9B-0H0" id="6Da-nw-jQo"/>
+            </connections>
+            <point key="canvasLocation" x="333.5" y="314.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="51Reason_0" width="22" height="22"/>
+    </resources>
+</document>

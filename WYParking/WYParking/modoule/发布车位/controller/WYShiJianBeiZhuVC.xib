@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WYShiJianBeiZhuVC">
+            <connections>
+                <outlet property="TFTime_note" destination="ZRH-DM-Bsu" id="viG-fT-hSs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNT-SY-fgd">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ri2-NB-IX1">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="lNo-Uw-fpQ"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="例：周四限行，不外租" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRH-DM-Bsu">
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ri2-NB-IX1" firstAttribute="top" secondItem="ZRH-DM-Bsu" secondAttribute="bottom" id="JoZ-n2-0gG"/>
+                        <constraint firstAttribute="height" constant="50" id="Mj1-DI-8hT"/>
+                        <constraint firstItem="ri2-NB-IX1" firstAttribute="leading" secondItem="VNT-SY-fgd" secondAttribute="leading" id="RMh-kc-Qo4"/>
+                        <constraint firstAttribute="trailing" secondItem="ri2-NB-IX1" secondAttribute="trailing" id="a2E-Ee-sZr"/>
+                        <constraint firstAttribute="bottom" secondItem="ri2-NB-IX1" secondAttribute="bottom" id="pbN-CZ-etD"/>
+                        <constraint firstItem="ZRH-DM-Bsu" firstAttribute="top" secondItem="VNT-SY-fgd" secondAttribute="top" id="xU3-BI-9F8"/>
+                        <constraint firstItem="ZRH-DM-Bsu" firstAttribute="leading" secondItem="VNT-SY-fgd" secondAttribute="leading" id="zS5-kV-NSF"/>
+                        <constraint firstAttribute="trailing" secondItem="ZRH-DM-Bsu" secondAttribute="trailing" id="zqV-zX-gSf"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于时间，还有什么想说的？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlG-04-q3h">
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.67843137249999996" green="0.68235294120000001" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-HH-X5R">
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.1960784314" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="10o-CX-Mp2"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="1r9-Dw-EqO"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="2OQ-Eg-r0M"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnNextClick:" destination="-1" eventType="touchUpInside" id="XZ6-fz-A59"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VNT-SY-fgd" secondAttribute="bottom" constant="75" id="7uw-PL-2ZW"/>
+                <constraint firstItem="ZlG-04-q3h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BoR-MN-Y2w"/>
+                <constraint firstItem="VNT-SY-fgd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="DlM-tK-e0s"/>
+                <constraint firstItem="YY8-HH-X5R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HYR-HS-pWp"/>
+                <constraint firstAttribute="trailing" secondItem="VNT-SY-fgd" secondAttribute="trailing" constant="20" id="M6G-XC-4y1"/>
+                <constraint firstAttribute="trailing" secondItem="YY8-HH-X5R" secondAttribute="trailing" id="akg-Nb-o9Y"/>
+                <constraint firstItem="ZlG-04-q3h" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-125" id="eRs-GH-vr3"/>
+                <constraint firstAttribute="bottom" secondItem="YY8-HH-X5R" secondAttribute="bottom" id="sTj-SK-U30"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

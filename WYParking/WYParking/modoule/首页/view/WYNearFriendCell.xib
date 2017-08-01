@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WYNearFriendCell" id="gTV-IL-0wX" customClass="WYNearFriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="104" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tx" translatesAutoresizingMaskIntoConstraints="NO" id="j6j-Bo-3KH">
+                        <rect key="frame" x="17" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="SeJ-Vn-mH0"/>
+                            <constraint firstAttribute="height" constant="70" id="sqN-zO-D6A"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="困困的云山" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe4-0o-dQZ">
+                        <rect key="frame" x="16.5" y="100" width="71.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奥迪Q7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHR-YE-IDK">
+                        <rect key="frame" x="32" y="122" width="40.5" height="14.5"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.95294117649999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yhxq_man" translatesAutoresizingMaskIntoConstraints="NO" id="pAV-K7-rpb">
+                        <rect key="frame" x="68" y="66" width="19" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="19" id="ITq-eI-XtP"/>
+                            <constraint firstAttribute="height" constant="19" id="bab-EM-omW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="j6j-Bo-3KH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="9Fc-NL-kjB"/>
+                <constraint firstItem="pAV-K7-rpb" firstAttribute="bottom" secondItem="j6j-Bo-3KH" secondAttribute="bottom" id="Aqh-wg-0Cp"/>
+                <constraint firstItem="Oe4-0o-dQZ" firstAttribute="top" secondItem="j6j-Bo-3KH" secondAttribute="bottom" constant="15" id="dWg-Wh-0fH"/>
+                <constraint firstItem="tHR-YE-IDK" firstAttribute="centerX" secondItem="Oe4-0o-dQZ" secondAttribute="centerX" id="q8D-tz-JZ1"/>
+                <constraint firstItem="pAV-K7-rpb" firstAttribute="trailing" secondItem="j6j-Bo-3KH" secondAttribute="trailing" id="sc2-vF-Bha"/>
+                <constraint firstItem="Oe4-0o-dQZ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="uDm-o5-zsh"/>
+                <constraint firstItem="j6j-Bo-3KH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="ura-ZO-OKa"/>
+                <constraint firstItem="j6j-Bo-3KH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vi2-ps-10D"/>
+                <constraint firstItem="tHR-YE-IDK" firstAttribute="top" secondItem="Oe4-0o-dQZ" secondAttribute="bottom" constant="5" id="wDH-jI-eA1"/>
+            </constraints>
+            <size key="customSize" width="215" height="209"/>
+            <connections>
+                <outlet property="imageViewLog" destination="j6j-Bo-3KH" id="gf4-Rg-SRU"/>
+                <outlet property="imageViewSex" destination="pAV-K7-rpb" id="hLs-um-i6Q"/>
+                <outlet property="labChePai" destination="tHR-YE-IDK" id="XcI-F9-aLI"/>
+                <outlet property="labUserName" destination="Oe4-0o-dQZ" id="3rT-4r-b1a"/>
+            </connections>
+            <point key="canvasLocation" x="116.5" y="133.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tx" width="259" height="259"/>
+        <image name="yhxq_man" width="14" height="14"/>
+    </resources>
+</document>

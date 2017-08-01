@@ -1,0 +1,189 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AMap3DMap (4.6.1):
+    - AMapFoundation (~> 1.3)
+  - AMapFoundation (1.3.4)
+  - AMapLocation (2.3.0):
+    - AMapFoundation (~> 1.3)
+  - AMapNavi (2.3.0):
+    - AMap3DMap (~> 4.2)
+    - AMapFoundation (~> 1.2)
+  - AMapSearch (4.5.0):
+    - AMapFoundation (~> 1.2)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - FLEX (2.4.0)
+  - IQKeyboardManager (4.0.4)
+  - KLCPopup (1.0)
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - libextobjc/NSInvocation+EXT (= 0.4.1)
+    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - Masonry (1.0.1)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - MOBFoundation (2.0.8)
+  - PKRevealController (2.0.6)
+  - pop (1.0.9)
+  - RDVTabBarController (1.1.9)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - RongCloudIM (2.8.0):
+    - RongCloudIM/CallKit (= 2.8.0)
+    - RongCloudIM/CallLib (= 2.8.0)
+    - RongCloudIM/IMKit (= 2.8.0)
+    - RongCloudIM/IMLib (= 2.8.0)
+    - RongCloudIM/RedPacket (= 2.8.0)
+  - RongCloudIM/CallKit (2.8.0):
+    - RongCloudIM/CallLib
+    - RongCloudIM/IMKit
+  - RongCloudIM/CallLib (2.8.0):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMKit (2.8.0):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.8.0)
+  - RongCloudIM/RedPacket (2.8.0):
+    - RongCloudIM/IMKit
+  - ShareSDK3 (3.3.2):
+    - ShareSDK3/ShareSDK (= 3.3.2)
+  - ShareSDK3/ShareSDK (3.3.2)
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.3.2)
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.3.2)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.3.2)
+  - SVProgressHUD (2.0.3)
+  - Toast (3.0)
+  - UITextView+Placeholder (1.2.0)
+  - UMengAnalytics (4.0.4)
+  - XZMRefresh (1.1.3)
+  - YUChineseSorting (1.0.2)
+  - YYKit (1.0.7):
+    - YYKit/no-arc (= 1.0.7)
+  - YYKit/no-arc (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AMapLocation
+  - AMapNavi
+  - AMapSearch
+  - BlocksKit
+  - FLEX
+  - IQKeyboardManager
+  - KLCPopup
+  - libextobjc
+  - Masonry
+  - MJExtension
+  - MJRefresh
+  - MOBFoundation
+  - PKRevealController
+  - pop
+  - RDVTabBarController
+  - ReactiveCocoa (~> 2.5)
+  - RongCloudIM
+  - ShareSDK3
+  - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
+  - SVProgressHUD
+  - Toast
+  - UITextView+Placeholder
+  - UMengAnalytics
+  - XZMRefresh
+  - YUChineseSorting
+  - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AMap3DMap: eb6656fb441ed7eb310b3c121032e947d4d649e5
+  AMapFoundation: 486493b8e9ae4a1cb7ce2d8d8978ee1aabf9bb34
+  AMapLocation: 5fb51fe0e35e68a899199651942e6234d6257d91
+  AMapNavi: 4f48c7b34275f80f3d14eff669ac739e0e190c1b
+  AMapSearch: 7a6ebc20a42e34a021b042b047f198082fc2fc30
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  IQKeyboardManager: 4a6f83b540283c2645aaeba2bd8dc0f09b5c77f8
+  KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MOBFoundation: 6f2006b941bd4002e2689a638d04c6b535c4cc64
+  PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RongCloudIM: 82a5fcf93027ef2845063e6d5ba77f9f42eb87a5
+  ShareSDK3: c76cb96eb38e079952b8157071486d945faa2df2
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  Toast: 32c59229abfcf41850162b83bb9259dc84372473
+  UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
+  UMengAnalytics: 4ed421fb3bca63b26fc13c947743cabf3831d199
+  XZMRefresh: 2c0f1b70d9fe97a1d0286373e29986d44f0a7b1a
+  YUChineseSorting: 46bbd4fa0344e21b169a537bb17aafec0980c560
+  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
+
+PODFILE CHECKSUM: 67ff095f70367ff795c48a9ffffec2f3a80a1e26
+
+COCOAPODS: 1.2.1

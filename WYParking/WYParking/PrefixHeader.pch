@@ -1,0 +1,58 @@
+//
+//  PrefixHeader.pch
+//  WYParking
+//
+//  Created by glavesoft on 17/2/6.
+//  Copyright © 2017年 glavesoft. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define  MAS_SHORTHAND_GLOBALS
+#import <Masonry/Masonry.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <pop/POP.h>
+#import <PKRevealController/PKRevealController.h>
+#import <RDVTabBarController/RDVTabBarController.h>
+#import <BlocksKit/BlocksKit.h>
+#import <BlocksKit/UIControl+BlocksKit.h>
+#import <MJRefresh/MJRefresh.h>
+#import <pop/POP.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
+#import "UIView+Toast.h"
+#import <UITextView_Placeholder/UITextView+Placeholder.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <AFNetworking/AFNetworking.h>
+#import "WYCommon.h"
+#import <YYKit/YYKit.h>
+#import "FLEXManager.h"
+#import "AppDelegate.h"
+#import "Utils.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import "UIView+Frame.h"
+#import <KLCPopup/KLCPopup.h>
+#import <libextobjc/EXTScope.h>
+#import "MBProgressHUD.h"
+#import <libextobjc/libextobjc-umbrella.h>
+#import "wyApiManager.h"
+#import <MJExtension/MJExtension.h>
+#import "MBProgressHUD+MJ.h"
+#import "wyLogInCenter.h"
+// 自定义Log
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define WYLog(...) NSLog(__VA_ARGS__)
+#define WYFunc ZCLog(@"%s", __func__);
+#else // 发布状态, 关闭LOG功能
+#define WYLog(...)
+#define WYFunc
+#endif
+
+
+
+#endif /* PrefixHeader_pch */
+
+
+
+
+

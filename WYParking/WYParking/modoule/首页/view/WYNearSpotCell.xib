@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WYNearSpotCell" id="gTV-IL-0wX" customClass="WYNearSpotCell">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="222" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tx" translatesAutoresizingMaskIntoConstraints="NO" id="c8i-rZ-kde">
+                        <rect key="frame" x="0.0" y="0.0" width="222" height="148"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="222" id="JUu-48-e8Y"/>
+                            <constraint firstAttribute="height" constant="148" id="e6J-SK-f72"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sy_location" translatesAutoresizingMaskIntoConstraints="NO" id="QBI-hw-htn">
+                        <rect key="frame" x="2" y="174" width="12" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="CFd-C6-N2V"/>
+                            <constraint firstAttribute="width" constant="12" id="yYD-DA-92z"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大厦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zge-R4-Ipk">
+                        <rect key="frame" x="0.0" y="153" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIL-cy-Wbo">
+                        <rect key="frame" x="16" y="172" width="41" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuq-7N-MII" customClass="WYBlueStarView">
+                        <rect key="frame" x="150" y="156" width="72" height="14"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="CF5-1m-xOI"/>
+                            <constraint firstAttribute="width" constant="72" id="GYQ-wp-33w"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="c8i-rZ-kde" secondAttribute="trailing" id="4bC-iP-N6A"/>
+                <constraint firstAttribute="bottom" secondItem="QBI-hw-htn" secondAttribute="bottom" id="AxT-Ku-Xyc"/>
+                <constraint firstItem="tuq-7N-MII" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="150" id="H2V-Zo-HEg"/>
+                <constraint firstItem="zge-R4-Ipk" firstAttribute="top" secondItem="c8i-rZ-kde" secondAttribute="bottom" constant="5" id="HhC-dj-Qs2"/>
+                <constraint firstItem="tuq-7N-MII" firstAttribute="top" secondItem="zge-R4-Ipk" secondAttribute="top" constant="3" id="T7k-sc-GuH"/>
+                <constraint firstItem="c8i-rZ-kde" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TJX-xL-JIE"/>
+                <constraint firstItem="c8i-rZ-kde" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VlN-Bp-ilD"/>
+                <constraint firstAttribute="bottom" secondItem="QIL-cy-Wbo" secondAttribute="bottom" id="i4y-eo-66d"/>
+                <constraint firstItem="QBI-hw-htn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="lAs-1P-BcG"/>
+                <constraint firstItem="zge-R4-Ipk" firstAttribute="leading" secondItem="c8i-rZ-kde" secondAttribute="leading" id="q7B-mI-Qqx"/>
+                <constraint firstItem="QIL-cy-Wbo" firstAttribute="leading" secondItem="QBI-hw-htn" secondAttribute="trailing" constant="2" id="rBv-K3-TfN"/>
+            </constraints>
+            <size key="customSize" width="172" height="199"/>
+            <connections>
+                <outlet property="BlueStar" destination="tuq-7N-MII" id="RjP-NL-00F"/>
+                <outlet property="iconImage" destination="c8i-rZ-kde" id="FFJ-1W-v56"/>
+                <outlet property="labBuilding" destination="zge-R4-Ipk" id="Tvb-C0-zLs"/>
+                <outlet property="labDistance" destination="QIL-cy-Wbo" id="DIa-hs-dWl"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="73"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sy_location" width="9" height="11"/>
+        <image name="tx" width="259" height="259"/>
+    </resources>
+</document>

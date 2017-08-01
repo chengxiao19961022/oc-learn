@@ -1,0 +1,6 @@
+framework module YUChineseSorting {
+  umbrella header "YUChineseSorting-umbrella.h"
+
+  export *
+  module * { export * }
+}

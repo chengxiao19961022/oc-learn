@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WYLinkCell" rowHeight="87" id="KGk-i7-Jjw" customClass="WYLinkCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="321" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tx" translatesAutoresizingMaskIntoConstraints="NO" id="QL3-yA-dyd">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9oi-ZI-aS2"/>
+                            <constraint firstAttribute="width" constant="40" id="yxs-FP-WfO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江苏省南通市北三环 ，大厦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rU-N1-0NB">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ab-7K-zyB">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="qYY-p3-nGK"/>
+                            <constraint firstAttribute="height" constant="28" id="yJD-Eb-K5u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="关联"/>
+                        <connections>
+                            <action selector="btnGuanLIan:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UDA-kF-zvB"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tab-Ot-QM5">
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.91764705879999997" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="WhX-3Z-JoF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tab-Ot-QM5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0CV-2M-Pqd"/>
+                    <constraint firstAttribute="trailing" secondItem="0Ab-7K-zyB" secondAttribute="trailing" constant="10" id="5Kb-Hz-SmB"/>
+                    <constraint firstAttribute="bottom" secondItem="tab-Ot-QM5" secondAttribute="bottom" id="Hmi-Dw-dTp"/>
+                    <constraint firstItem="0Ab-7K-zyB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IZN-Rw-LMw"/>
+                    <constraint firstItem="6rU-N1-0NB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JlD-cd-hia"/>
+                    <constraint firstItem="QL3-yA-dyd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MIW-r2-axh"/>
+                    <constraint firstItem="6rU-N1-0NB" firstAttribute="leading" secondItem="QL3-yA-dyd" secondAttribute="trailing" constant="10" id="j0Z-Kd-RJW"/>
+                    <constraint firstItem="QL3-yA-dyd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="k9O-Bt-ZCO"/>
+                    <constraint firstAttribute="trailing" secondItem="tab-Ot-QM5" secondAttribute="trailing" id="sMD-91-ld3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnGuanLian" destination="0Ab-7K-zyB" id="9ij-uC-0cK"/>
+                <outlet property="imageViewUserlogo" destination="QL3-yA-dyd" id="B9V-Rh-rnY"/>
+                <outlet property="labAddress" destination="6rU-N1-0NB" id="c9U-rf-dWO"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="111.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tx" width="259" height="259"/>
+    </resources>
+</document>

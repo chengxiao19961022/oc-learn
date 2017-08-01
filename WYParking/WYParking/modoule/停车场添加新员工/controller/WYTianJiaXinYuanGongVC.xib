@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WYTianJiaXinYuanGongVC">
+            <connections>
+                <outlet property="TFUserName" destination="gxQ-Ym-K9N" id="A3F-48-Ueb"/>
+                <outlet property="searchView" destination="PH2-Ib-msm" id="ns5-kc-IHC"/>
+                <outlet property="tbView" destination="DqF-30-1YE" id="Vxf-hT-XB6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Na1-MQ-JVM">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-Ib-msm">
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tjhy_search" translatesAutoresizingMaskIntoConstraints="NO" id="4OD-Q4-EiI">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="04T-sK-lX7"/>
+                                        <constraint firstAttribute="height" constant="25" id="m0y-X3-6cf"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-Ym-K9N">
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="4OD-Q4-EiI" firstAttribute="centerY" secondItem="PH2-Ib-msm" secondAttribute="centerY" id="JbL-u5-cc1"/>
+                                <constraint firstAttribute="trailing" secondItem="gxQ-Ym-K9N" secondAttribute="trailing" id="LQd-yj-cKZ"/>
+                                <constraint firstItem="4OD-Q4-EiI" firstAttribute="leading" secondItem="PH2-Ib-msm" secondAttribute="leading" constant="10" id="NYA-Sh-5Mb"/>
+                                <constraint firstItem="gxQ-Ym-K9N" firstAttribute="centerY" secondItem="PH2-Ib-msm" secondAttribute="centerY" id="Qw1-xr-brR"/>
+                                <constraint firstItem="gxQ-Ym-K9N" firstAttribute="height" secondItem="4OD-Q4-EiI" secondAttribute="height" id="hHl-Uy-8mk"/>
+                                <constraint firstAttribute="height" constant="35" id="hIb-m2-pcH"/>
+                                <constraint firstItem="gxQ-Ym-K9N" firstAttribute="leading" secondItem="4OD-Q4-EiI" secondAttribute="trailing" id="woh-7p-qX7"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜索" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5k-Lf-IHN">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="cgO-fR-59S"/>
+                                <constraint firstAttribute="height" constant="44" id="fGH-Xx-Onf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.3921568627" green="0.51372549020000002" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slv-M6-t7X">
+                            <connections>
+                                <action selector="btnCancelClick:" destination="-1" eventType="touchUpInside" id="qIQ-w0-zZM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWb-2e-PDM">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Cgx-c6-hqg"/>
+                                <constraint firstAttribute="width" constant="30" id="LEW-rb-CeO"/>
+                            </constraints>
+                            <state key="normal" image="tc_gb"/>
+                            <connections>
+                                <action selector="btnGuanBiClick:" destination="-1" eventType="touchUpInside" id="P77-96-G8b"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="K5k-Lf-IHN" secondAttribute="trailing" constant="15" id="H9S-gx-cO3"/>
+                        <constraint firstItem="K5k-Lf-IHN" firstAttribute="bottom" secondItem="slv-M6-t7X" secondAttribute="bottom" id="IWb-j7-Hdg"/>
+                        <constraint firstAttribute="height" constant="64" id="Iuc-Ie-t5f"/>
+                        <constraint firstItem="PH2-Ib-msm" firstAttribute="leading" secondItem="Na1-MQ-JVM" secondAttribute="leading" constant="50" id="JUS-L7-AV7"/>
+                        <constraint firstItem="K5k-Lf-IHN" firstAttribute="top" secondItem="slv-M6-t7X" secondAttribute="top" id="M0i-iG-BBR"/>
+                        <constraint firstItem="K5k-Lf-IHN" firstAttribute="leading" secondItem="PH2-Ib-msm" secondAttribute="trailing" constant="15" id="MhO-Oi-dmm"/>
+                        <constraint firstAttribute="bottom" secondItem="K5k-Lf-IHN" secondAttribute="bottom" constant="4" id="OIw-Q3-zkG"/>
+                        <constraint firstItem="EWb-2e-PDM" firstAttribute="leading" secondItem="Na1-MQ-JVM" secondAttribute="leading" constant="10" id="OnV-gr-0VQ"/>
+                        <constraint firstItem="K5k-Lf-IHN" firstAttribute="trailing" secondItem="slv-M6-t7X" secondAttribute="trailing" id="YQ9-B8-d9v"/>
+                        <constraint firstItem="slv-M6-t7X" firstAttribute="centerY" secondItem="PH2-Ib-msm" secondAttribute="centerY" id="heB-6Y-Y5S"/>
+                        <constraint firstItem="K5k-Lf-IHN" firstAttribute="leading" secondItem="slv-M6-t7X" secondAttribute="leading" id="lEW-aJ-xf5"/>
+                        <constraint firstItem="PH2-Ib-msm" firstAttribute="centerY" secondItem="EWb-2e-PDM" secondAttribute="centerY" id="ofX-0n-Evf"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DqF-30-1YE">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Na1-MQ-JVM" secondAttribute="trailing" id="3mN-qG-8rs"/>
+                <constraint firstItem="Na1-MQ-JVM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BEj-MW-KuA"/>
+                <constraint firstItem="DqF-30-1YE" firstAttribute="top" secondItem="Na1-MQ-JVM" secondAttribute="bottom" id="Rsr-8c-1oT"/>
+                <constraint firstAttribute="bottom" secondItem="DqF-30-1YE" secondAttribute="bottom" id="TyL-xY-9Lv"/>
+                <constraint firstItem="DqF-30-1YE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c32-uw-Hm9"/>
+                <constraint firstItem="Na1-MQ-JVM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e34-dj-DRB"/>
+                <constraint firstAttribute="trailing" secondItem="DqF-30-1YE" secondAttribute="trailing" id="rdL-UV-SaT"/>
+            </constraints>
+            <point key="canvasLocation" x="118" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tc_gb" width="26" height="26"/>
+        <image name="tjhy_search" width="29" height="29"/>
+    </resources>
+</document>
