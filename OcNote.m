@@ -1,4 +1,7 @@
 ios学习笔记 -- 程潇
+// 使用模拟器错误
+    cd ~/Library/Developer/Xcode/DerivedData/
+    然后再终端输入：xattr -rc .
 
 // 注意代码的执行顺序和刷新,注意头文件的包含
 
