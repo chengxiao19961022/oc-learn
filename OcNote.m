@@ -106,6 +106,9 @@ http://www.cocoachina.com/ios/20160616/16732.html
 
     self.gifImageView.center = CGPointMake(self.width / 2, self.height / 2 + 130);      //将该view的中心放置在所示位置
 
+// xib添加相对约束
+    按住ctrl并选中控件，将其拖动到要比较的控件
+
 // 判断数据类型
     [obj isKindOfClass:[MyOrderViewController class]]
 
